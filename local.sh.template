@@ -1,0 +1,7 @@
+
+# Local config
+
+# openssl passwd -1 'newpassword'
+PASSWORDHASH='$1$CqvNWXHG$NgGqDu6xCP6DCKr86XVF10'
+
+#OBSHOME="$HOME/obs-home"

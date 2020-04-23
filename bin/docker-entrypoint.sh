@@ -2,15 +2,14 @@
 
 set -e
 
+USER=user
 # Add sample user
 # sample user uses uid 1337 to reduce conflicts with user ids when mounting an existing home dir
-# the below has represents the password 'ubuntu'
+# the below has represents the password 'user'
 # run `openssl passwd -1 'newpassword'` to create a custom hash
 if [ ! $PASSWORDHASH ]; then
-    export PASSWORDHASH='$1$1osxf5dX$z2IN8cgmQocDYwTCkyh6r/'
+    export PASSWORDHASH='$1$CqvNWXHG$NgGqDu6xCP6DCKr86XVF10'
 fi
-
-USER=user
 
 groupadd --gid 1337 $USER && \
 useradd -m -u 1337 -s /bin/bash -g $USER $USER

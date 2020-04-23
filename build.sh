@@ -1,2 +1,5 @@
 #!/bin/bash
-docker build -t obs .
+
+cd "$(dirname "$(readlink -f "$0")")"
+
+docker build "$@" -t obs .
