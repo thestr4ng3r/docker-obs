@@ -19,17 +19,17 @@ RUN useradd -m build && \
 RUN install-aur xrdp
 RUN sudo -u build gpg --recv-keys 9F72CDBC01BF10EB && install-aur xorgxrdp
 
-RUN pacman --noconfirm -S xorg-server supervisor openssh xfce4 noto-fonts tilix vim
+RUN pacman --noconfirm -S xorg-server supervisor openssh xfce4 noto-fonts tilix vim obs-studio
 
 COPY bin /usr/bin
 COPY etc /etc
 
 RUN mkdir /run/dbus && \
 	echo "allowed_users=anybody" > /etc/X11/Xwrapper.config && \
-	echo "/usr/bin/dbus-launch /usr/bin/startxfce4" > /etc/skel/.xinitrc
+	echo "/usr/bin/dbus-launch /usr/bin/startxfce4" > /etc/X11/xinit/xinitrc
 
-# Docker config
-VOLUME ["/etc/ssh","/home"]
+VOLUME ["/etc/ssh"]
+#,"/home"]
 EXPOSE 3389 22 9001
 ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
 CMD ["supervisord"]

@@ -1,0 +1,11 @@
+[20200423-13:16:37] [CORE ] main: app started pid 58(0x0000003a)
+[20200423-13:16:37] [INFO ] main: DISPLAY env var set to :10.0
+[20200423-13:16:37] [INFO ] main: using DISPLAY 10
+[20200423-13:16:37] [INFO ] channel_thread_loop: thread start
+[20200423-13:16:37] [INFO ] Socket 12: AF_UNIX connection received
+[20200423-13:18:18] [ERROR] clipboard_event_selection_request: unknown target text/plain;charset=utf-8
+[20200423-13:18:18] [ERROR] clipboard_event_selection_request: unknown target text/plain;charset=utf-8
+[20200423-13:21:56] [INFO ] term_signal_handler: got signal 15
+[20200423-13:21:56] [INFO ] channel_thread_loop: g_term_event set
+[20200423-13:21:56] [INFO ] channel_thread_loop: thread stop
+[20200423-13:21:56] [INFO ] main: app exiting pid 58(0x0000003a)
