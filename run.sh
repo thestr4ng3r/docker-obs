@@ -18,8 +18,7 @@ fi
 
 docker run \
 	--shm-size 1g \
-	-p 3389:3389 \
-	-p 2222:22 \
+	-p 2223:22 \
 	--name obs \
 	--rm \
 	"${EXTRA_ARGS[@]}" \
