@@ -1,3 +1,0 @@
-#!/bin/bash
-
-sudo -u build bash -c "cd /home/build && git clone https://aur.archlinux.org/$1.git && cd $1 && makepkg --noconfirm -si"

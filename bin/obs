@@ -1,0 +1,3 @@
+#!/bin/bash
+
+LD_LIBRARY_PATH="/usr/local/mesa-libgl-xlib/lib:$LD_LIBRARY_PATH" /usr/bin/obs
