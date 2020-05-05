@@ -13,6 +13,9 @@ RUN cd /root && curl https://mesa.freedesktop.org/archive/mesa-20.0.5.tar.xz -o 
 
 RUN pacman --noconfirm -S xorg-server supervisor openssh xfce4 noto-fonts tilix vim obs-studio vlc
 
+# some dev stuff
+RUN pacman --noconfirm -S cmake mesa-demos
+
 RUN x2godbadmin --createdb
 
 COPY bin /usr/local/bin
